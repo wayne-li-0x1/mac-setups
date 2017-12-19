@@ -1,6 +1,7 @@
 #Settings
 set prompt='%B%T%b@%m %/ %#.%?\% '
 set autolist #make complete even better
+bindkey -v
 
 #Completes
 complete setenv     'p/1/e/'
@@ -38,8 +39,9 @@ alias ll        "ls -l "
 alias env       "env |sort|less"
 alias ls 	"/bin/ls -G "
 alias gitlog    "git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
-
+alias dev	"cd ~/dev-sandbox"
 
 #PATHs
+set path = (/usr/local/bin $path)
 
 
